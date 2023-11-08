@@ -556,10 +556,16 @@ footer{
 
 @media (max-width: 768px) {
 
+    .col-one{
+        padding-left: 35px!important;
+        padding-right: 35px!important;
+    }
+
     .nav_logo h1{
         width: 100%;
         font-size: 2rem;
     }
+    
 
     #menu-icon{
         display: block;
