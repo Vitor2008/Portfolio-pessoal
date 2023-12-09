@@ -48,15 +48,3 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-
-
-/*=========Link em nova aba ==============*/
-var links = document.querySelectorAll(".meuLink");
-
-links.forEach(function(link) {
-    link.addEventListener("click", function(event) {
-        event.preventDefault();
-        var linkURL = link.getAttribute("href");
-        window.open(linkURL, "_blank");
-            });
-        });
