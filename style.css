@@ -161,6 +161,60 @@ span{
     box-shadow: none;
 }
 
+
+.botao-whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    height: 60px;
+    width: 60px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    color: var(--text-color);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1999;
+}
+
+.botao-whatsapp:before, .botao-whatsapp::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -40px;
+    right: -40px;
+    top: -40px;
+    bottom: -40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    animation: animar 1.5s linear infinite;
+    opacity: 0;
+}
+
+.botao-whatsapp::after{
+    animation-delay: .5s;
+    opacity: 0;
+}
+
+@keyframes animar {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+
 .about{
     display: flex;
     justify-content: center;
