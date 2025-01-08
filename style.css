@@ -251,11 +251,11 @@ span{
 
 .link{
     text-decoration: none;
-    color: var(--text-color);
+    color: #E2C100;
 }
 
 .link:hover{
-    color: #0ef;
+    color: #FFDA00;
 }
 
 
